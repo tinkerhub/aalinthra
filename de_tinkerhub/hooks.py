@@ -53,14 +53,13 @@ website_route_rules = [
 
 website_redirects = [
     {"source": "/event-creation/list", "target": f"/event-creation/new"},
-    {"source": "/index", "target": f"/upcoming-events"},
-    {"source": "", "target": f"/upcoming-events"}
+
 ]
 
 role_home_page = {
-    "Learner": "/upcoming-events",
-    "Campus Lead": "/index",
-    "Administrator": "desk"
+    # "Learner": "/upcoming-events",
+    # "Campus Lead": "/index",
+    # "Administrator": "desk"
 }
 
 # Generators

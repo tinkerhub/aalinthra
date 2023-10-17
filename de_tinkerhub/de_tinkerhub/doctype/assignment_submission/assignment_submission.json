@@ -10,6 +10,8 @@
  "field_order": [
   "event",
   "column_break_zaaoc",
+  "college",
+  "column_break_hy71z",
   "learner",
   "section_break_esajt",
   "question",
@@ -42,16 +44,26 @@
    "label": "User Response"
   },
   {
-   "fetch_from": "assignment.event",
    "fieldname": "event",
    "fieldtype": "Link",
    "label": "Event",
    "options": "TinkerHub Event"
+  },
+  {
+   "fetch_from": "event.host_college",
+   "fieldname": "college",
+   "fieldtype": "Link",
+   "label": "College",
+   "options": "College"
+  },
+  {
+   "fieldname": "column_break_hy71z",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-21 07:02:34.058056",
+ "modified": "2023-10-17 15:08:30.045868",
  "modified_by": "Administrator",
  "module": "De Tinkerhub",
  "name": "Assignment Submission",

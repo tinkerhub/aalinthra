@@ -9,6 +9,7 @@
  "engine": "InnoDB",
  "field_order": [
   "event",
+  "college",
   "event_title",
   "candidate_details_section",
   "full_name",
@@ -96,11 +97,18 @@
    "fieldname": "add_skill",
    "fieldtype": "Check",
    "label": "Add Skill"
+  },
+  {
+   "fetch_from": "event.host_college",
+   "fieldname": "college",
+   "fieldtype": "Link",
+   "label": "College",
+   "options": "College"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-03 23:17:51.205001",
+ "modified": "2023-10-17 15:04:02.600970",
  "modified_by": "Administrator",
  "module": "De Tinkerhub",
  "name": "Event Registration",

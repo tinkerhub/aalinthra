@@ -9,6 +9,7 @@
  "engine": "InnoDB",
  "field_order": [
   "event_id",
+  "college",
   "learner_email"
  ],
  "fields": [
@@ -26,11 +27,18 @@
    "in_list_view": 1,
    "label": "Learner Email",
    "reqd": 1
+  },
+  {
+   "fetch_from": "event_id.host_college",
+   "fieldname": "college",
+   "fieldtype": "Link",
+   "label": "College",
+   "options": "College"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-20 15:44:05.718256",
+ "modified": "2023-10-17 15:05:28.403109",
  "modified_by": "Administrator",
  "module": "De Tinkerhub",
  "name": "Event Participant",

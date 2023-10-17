@@ -9,6 +9,8 @@
  "field_order": [
   "event",
   "column_break_zaaoc",
+  "college",
+  "column_break_80tiu",
   "learner",
   "section_break_esajt",
   "question",
@@ -48,11 +50,22 @@
    "in_standard_filter": 1,
    "label": "Event",
    "options": "TinkerHub Event"
+  },
+  {
+   "fetch_from": "event.host_college",
+   "fieldname": "college",
+   "fieldtype": "Link",
+   "label": "College",
+   "options": "College"
+  },
+  {
+   "fieldname": "column_break_80tiu",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-22 04:57:21.558427",
+ "modified": "2023-10-17 15:15:37.022462",
  "modified_by": "Administrator",
  "module": "De Tinkerhub",
  "name": "Feedback Submission",

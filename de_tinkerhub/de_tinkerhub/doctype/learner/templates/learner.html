@@ -1,31 +1,7 @@
 {% extends "templates/web.html" %}
 
-<div class="sidebar-column col-sm-{{ 2 }}">
-    {% block page_sidebar %}
-    {% include "templates/side-bar.html" %}
-    {% endblock %}
-</div>
-
-
 {% block page_content %}
-<div id="content"></div>
 <h1>{{ title }}</h1>
-
-{% if college %}
-<h3> College : {{college_name}}</h3> 
-{% endif %}
-
-{% if portfolio %}
-<h3> Portfolio : <a href="{{portfolio}}">Click Here </a></h3> 
-{% endif %}
-{% if linkedin %}
-<h3> Linkedin : <a href="{{linkedin}}">Click Here </a></h3> 
-{% endif %}
-{% if github %}
-<h3> Github : <a href="{{github}}">Click Here </a></h3> 
-{% endif %}
-</div>
-
 {% endblock %}
 
 <!-- this is a sample default web page template -->

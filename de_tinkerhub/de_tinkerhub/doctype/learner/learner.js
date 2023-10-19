@@ -2,5 +2,7 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Learner', {
+	// refresh: function(frm) {
 
+	// }
 });

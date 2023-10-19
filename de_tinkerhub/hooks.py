@@ -126,9 +126,9 @@ doc_events = {
     "TinkerHub Event":{
         "on_update":"de_tinkerhub.de_tinkerhub.event_update_email.send_event_update_email"
     },
-    "User":{
-        "after_insert":"de_tinkerhub.de_tinkerhub.learner_creation.on_user_signup"
-    },
+    # "User":{
+    #     "after_insert":"de_tinkerhub.de_tinkerhub.learner_creation.on_user_signup"
+    # },
     "User":{
         "on_update":"de_tinkerhub.de_tinkerhub.lead_role.on_lead_role"
     }

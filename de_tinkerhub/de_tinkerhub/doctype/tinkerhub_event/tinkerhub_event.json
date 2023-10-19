@@ -177,6 +177,7 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Route"
   },
   {
@@ -261,7 +262,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2023-10-03 07:14:15.739783",
+ "modified": "2023-10-19 15:26:39.705476",
  "modified_by": "Administrator",
  "module": "De Tinkerhub",
  "name": "TinkerHub Event",

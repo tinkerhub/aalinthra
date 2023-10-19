@@ -4,7 +4,7 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:email",
- "creation": "2023-08-08 02:04:34.438036",
+ "creation": "2023-10-19 15:24:50.588422",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -21,7 +21,6 @@
   "college_student",
   "column_break_pn1xt",
   "college",
-  "is_lead",
   "section_break_bwons",
   "is_working",
   "column_break_2g8po",
@@ -45,6 +44,13 @@
   "restrict_profile"
  ],
  "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "unique": 1
+  },
   {
    "fieldname": "section_break_obmvb",
    "fieldtype": "Section Break"
@@ -206,19 +212,6 @@
   },
   {
    "default": "0",
-   "fieldname": "is_lead",
-   "fieldtype": "Check",
-   "label": "Is Lead"
-  },
-  {
-   "fieldname": "user",
-   "fieldtype": "Link",
-   "label": "User",
-   "options": "User",
-   "unique": 1
-  },
-  {
-   "default": "0",
    "fieldname": "restrict_profile",
    "fieldtype": "Check",
    "label": "Restrict Profile"
@@ -228,7 +221,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2023-09-29 15:21:18.115796",
+ "modified": "2023-10-19 15:25:09.610649",
  "modified_by": "Administrator",
  "module": "De Tinkerhub",
  "name": "Learner",

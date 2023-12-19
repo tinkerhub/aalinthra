@@ -52,8 +52,7 @@ website_route_rules = [
 ]
 
 website_redirects = [
-    {"source": "/event-creation/list", "target": f"/event-creation/new"},
-
+    {"source": "/event-creation/list", "target": f"/event-creation/new"}
 ]
 
 role_home_page = {

@@ -27,45 +27,47 @@ def on_lead_role(self, method):
     # check for campus lead role
     old_doc = self.get_doc_before_save()
 
-    if old_doc.roles != self.roles :
-        roles = frappe.get_all(
-            'Has Role',
-            filters={'parent': self.name},
-            fields=['role']
-        )
-        cur_roles = [item['role'] for item in roles]
-        college = frappe.db.get_value('Learner', self.name, 'college')
-        if 'Campus Lead' in cur_roles and not frappe.db.exists('User Permission', {'user': self.name, 'allow': 'College', 'for_value': college}):
-            if college:
-                permission = get_doc({
-                    'doctype': 'User Permission',
-                    'user': self.name, 
-                    'allow': 'College', 
-                    'for_value': college
-                })
-                permission.insert(ignore_permissions=True)
-                frappe.db.delete("User Permission", {
-                    'user': self.name, 
-                    'allow': 'Learner', 
-                    'for_value': self.name
-                })
-                frappe.db.commit()
-                    
-            else:
-                frappe.db.delete("User Permission", {
-                    'user': self.name, 
-                    'allow': 'College', 
-                    'for_value': college
-                })
-                if not frappe.db.exists( "User Permission", { "user": user_id, "allow": 'Learner', "for_value": self.email}):
+    if old_doc:
+
+        if old_doc.roles != self.roles :
+            roles = frappe.get_all(
+                'Has Role',
+                filters={'parent': self.name},
+                fields=['role']
+            )
+            cur_roles = [item['role'] for item in roles]
+            college = frappe.db.get_value('Learner', self.name, 'college')
+            if 'Campus Lead' in cur_roles and not frappe.db.exists('User Permission', {'user': self.name, 'allow': 'College', 'for_value': college}):
+                if college:
                     permission = get_doc({
                         'doctype': 'User Permission',
+                        'user': self.name, 
+                        'allow': 'College', 
+                        'for_value': college
+                    })
+                    permission.insert(ignore_permissions=True)
+                    frappe.db.delete("User Permission", {
                         'user': self.name, 
                         'allow': 'Learner', 
                         'for_value': self.name
                     })
-                    permission.insert(ignore_permissions=True)
-                frappe.db.commit()
+                    frappe.db.commit()
+                        
+                else:
+                    frappe.db.delete("User Permission", {
+                        'user': self.name, 
+                        'allow': 'College', 
+                        'for_value': college
+                    })
+                    if not frappe.db.exists( "User Permission", { "user": user_id, "allow": 'Learner', "for_value": self.email}):
+                        permission = get_doc({
+                            'doctype': 'User Permission',
+                            'user': self.name, 
+                            'allow': 'Learner', 
+                            'for_value': self.name
+                        })
+                        permission.insert(ignore_permissions=True)
+                    frappe.db.commit()
 
                     
             

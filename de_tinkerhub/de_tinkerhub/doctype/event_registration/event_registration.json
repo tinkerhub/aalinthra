@@ -35,6 +35,7 @@
    "fetch_from": "event.title",
    "fieldname": "event_title",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "Event Title",
    "read_only": 1
   },
@@ -102,13 +103,14 @@
    "fetch_from": "event.host_college",
    "fieldname": "college",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "College",
    "options": "College"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-17 15:04:02.600970",
+ "modified": "2023-12-15 20:27:23.854026",
  "modified_by": "Administrator",
  "module": "De Tinkerhub",
  "name": "Event Registration",

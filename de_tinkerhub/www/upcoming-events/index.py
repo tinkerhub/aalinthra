@@ -42,7 +42,7 @@ def get_context(context):
 			filters = {
 				'name': ['in', query]
 			},
-			fields = ['name','starting_date', 'title', 'host_college']
+			fields = ['name','starting_date', 'title', 'host_college', 'route']
     	)
 
     context.events = events

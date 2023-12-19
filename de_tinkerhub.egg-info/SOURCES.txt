@@ -150,8 +150,8 @@ de_tinkerhub/de_tinkerhub/web_form/tinkerhub_event/tinkerhub_event.py
 de_tinkerhub/de_tinkerhub/widgets/Breadcrumb.html
 de_tinkerhub/de_tinkerhub/workspace/events/events.json
 de_tinkerhub/public/css/style.css
-de_tinkerhub/public/dist/css/lms.bundle.DEPFDDZB.css
-de_tinkerhub/public/dist/css-rtl/lms.bundle.YRSGJ37C.css
+de_tinkerhub/public/dist/css/lms.bundle.6HR5KXI6.css
+de_tinkerhub/public/dist/css-rtl/lms.bundle.I3VBMGWF.css
 de_tinkerhub/public/js/de_tinkerhub.js
 de_tinkerhub/services/rest.py
 de_tinkerhub/templates/__init__.py

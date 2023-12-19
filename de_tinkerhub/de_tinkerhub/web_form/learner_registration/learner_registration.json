@@ -10,6 +10,7 @@
  "breadcrumbs": "",
  "button_label": "Save",
  "client_script": "frappe.web_form.after_load = () => {\n\tif (window.location.pathname.endsWith(\"/new\") && frappe.session.user) {\n\t\tlet current_path = window.location.href;\n\t\twindow.location.href = current_path.replace(\"/new\", \"/\" + frappe.session.user);\n\t}\n}",
+ "condition_json": "[]",
  "creation": "2023-06-30 16:23:00.460166",
  "custom_css": "",
  "doc_type": "Learner",
@@ -20,7 +21,7 @@
  "list_columns": [],
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2023-10-10 10:40:05.965918",
+ "modified": "2023-12-15 18:59:56.509113",
  "modified_by": "Administrator",
  "module": "De Tinkerhub",
  "name": "learner-registration",
@@ -31,7 +32,7 @@
  "show_list": 0,
  "show_sidebar": 1,
  "success_message": "Profile updated successfully!",
- "success_url": "http://54.95.13.232/learner-profile",
+ "success_url": "http://event-manager.com:8005/learner-profile/",
  "title": "Learner Profile",
  "web_form_fields": [
   {

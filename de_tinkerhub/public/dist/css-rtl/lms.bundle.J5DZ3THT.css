@@ -1,4 +1,4 @@
-/* ../../../../../../../var/folders/4_/lv_vmx0s681_6r64svft6mk00000gn/T/tmp-11873-oo3ZGtOSqB9A/18b470a2f830/style.css */
+/* ../../../../../../../var/folders/4_/lv_vmx0s681_6r64svft6mk00000gn/T/tmp-1365-D0yigdXmYgeJ/18c70e162281/style.css */
 :root {
   --text-3-5xl: 24px;
   --text-3-8xl: 34px;
@@ -194,7 +194,7 @@ textarea.field-input {
   font-size: var(--text-sm);
 }
 .lessons {
-  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 input[type=checkbox] {
   -webkit-appearance: auto;
@@ -203,7 +203,7 @@ input[type=checkbox] {
   position: relative;
   width: var(--checkbox-size) !important;
   height: var(--checkbox-size);
-  margin-right: var(--checkbox-right-margin) !important;
+  margin-left: var(--checkbox-right-margin) !important;
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid var(--gray-400);
@@ -238,7 +238,7 @@ input[type=checkbox] {
   display: flex;
   position: relative;
   top: 1rem;
-  left: 1rem;
+  right: 1rem;
 }
 .course-image .course-tags {
   width: -webkit-fit-content;
@@ -247,8 +247,8 @@ input[type=checkbox] {
 }
 .course-card-pills {
   background: #ffffff;
-  margin-left: 0;
-  margin-right: 0.5rem;
+  margin-right: 0;
+  margin-left: 0.5rem;
   border-radius: var(--border-radius);
   padding: 3.5px 8px;
   font-size: 11px;
@@ -338,18 +338,18 @@ input[type=checkbox] {
   margin-bottom: 16px;
 }
 .course-instructor {
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   font-size: var(--text-base);
 }
 @media (max-width: 400px) {
   .course-instructor {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 .course-student-count {
   display: flex;
   font-size: var(--text-base);
-  float: right;
+  float: left;
   color: var(--gray-900);
 }
 .course-card-footer {
@@ -391,8 +391,8 @@ input[type=checkbox] {
 }
 @media (min-width: 576px) and (max-width: 992px) {
   .container {
-    padding-left: 1rem;
     padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 .button-links {
@@ -414,7 +414,7 @@ input[type=checkbox] {
   height: 100%;
 }
 .review-content {
-  margin: 1rem 0 0 3.5rem;
+  margin: 1rem 3.5rem 0 0;
   color: var(--gray-700);
 }
 .custom-checkbox > label > .empty-checkbox {
@@ -424,7 +424,7 @@ input[type=checkbox] {
   border-radius: var(--border-radius-md);
 }
 .empty-checkbox {
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 .custom-checkbox > label > input:checked + .empty-checkbox {
   background: url(/assets/lms/icons/tick.svg);
@@ -503,7 +503,7 @@ input[type=checkbox] {
   display: flex;
   align-items: center;
   padding-bottom: 0.25rem;
-  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   font-size: var(--text-lg);
 }
 .chapter-title:last-child {
@@ -512,14 +512,14 @@ input[type=checkbox] {
 .chapter-description {
   color: var(--gray-900);
   font-size: var(--text-sm);
-  margin-left: 2rem;
+  margin-right: 2rem;
   margin-bottom: 0.5rem;
 }
 .course-content-parent .chapter-description {
   font-size: 0.75rem;
 }
 .chapter-icon {
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 .reviews-parent {
   color: var(--gray-900);
@@ -717,21 +717,21 @@ input[type=checkbox] {
   display: flex;
   flex-direction: column;
   margin-bottom: 2.5rem;
-  padding-left: 200px;
-  padding-right: 1rem;
+  padding-right: 200px;
+  padding-left: 1rem;
   border: 1px solid var(--gray-300);
 }
 @media (max-width: 550px) {
   .profile-info {
     align-items: flex-end;
-    padding-left: 0;
+    padding-right: 0;
     height: 150px;
   }
 }
 .profile-avatar {
   position: relative;
   top: 188px;
-  left: 40px;
+  right: 40px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -739,13 +739,13 @@ input[type=checkbox] {
 @media (max-width: 500px) {
   .profile-avatar {
     top: 95px;
-    left: 10px;
+    right: 10px;
   }
 }
 @media (max-width: 375px) {
   .profile-avatar {
     top: 120px;
-    left: 10px;
+    right: 10px;
   }
 }
 .profile-name {
@@ -787,7 +787,7 @@ input[type=checkbox] {
   height: fit-content;
   box-shadow: 0px 1px 1px rgb(0 0 0 / 16%);
   border-radius: var(--border-radius-sm);
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 @media (max-width: 375px) {
   .creator-badge {
@@ -797,7 +797,7 @@ input[type=checkbox] {
 @media (max-width: 550px) {
   .creator-badge {
     margin-top: 0.25rem;
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 .profile-grid-card {
@@ -908,7 +908,7 @@ pre {
   margin: 0.5rem 0;
 }
 .certificate-expiry {
-  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .column-card {
   flex-direction: column;
@@ -924,7 +924,7 @@ pre {
   align-items: center;
 }
 .empty-state-text {
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .empty-state-heading {
   font-size: var(--text-xl);
@@ -960,7 +960,7 @@ pre {
   outline: none;
 }
 .course-search-header {
-  float: right;
+  float: left;
   width: 80%;
   display: flex;
   justify-content: flex-end;
@@ -1086,9 +1086,9 @@ pre {
 .close-search-empty-state {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   padding: 0.75rem 1.25rem;
-  float: right;
+  float: left;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
@@ -1146,7 +1146,7 @@ pre {
   border-radius: var(--border-radius-sm);
   width: 50px;
   height: 50px;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .job-card-parent {
   display: grid;
@@ -1189,7 +1189,7 @@ pre {
   width: fit-content;
   position: absolute;
   top: 10%;
-  right: 7%;
+  left: 7%;
   width: 350px;
   z-index: 4;
 }
@@ -1280,7 +1280,7 @@ pre {
 }
 .star-click {
   --star-fill: var(--yellow-500);
-  margin-right: 0;
+  margin-left: 0;
 }
 .rating {
   --star-fill: var(--gray-400);
@@ -1338,13 +1338,13 @@ pre {
 }
 @media (min-width: 500px) {
   .lms-nav .nav-item:first-child .nav-link {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 .dashboard-button {
   position: relative;
   top: -50px;
-  margin-left: auto;
+  margin-right: auto;
 }
 .course-card-wide .breadcrumb {
   margin-bottom: 0;
@@ -1356,7 +1356,7 @@ pre {
   border: 1px solid var(--primary-color);
 }
 .show-attachments {
-  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   display: flex;
   align-items: center;
 }
@@ -1410,7 +1410,7 @@ li {
 .job-actions {
   display: flex;
   align-items: flex-start;
-  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1rem;
 }
 .job-detail-header {
@@ -1458,7 +1458,7 @@ li {
   margin-bottom: 1rem;
 }
 .chapter-edit .lessons {
-  margin-left: 0;
+  margin-right: 0;
 }
 .chapter-parent {
   margin-bottom: 1rem;
@@ -1479,7 +1479,7 @@ li {
 }
 .option-input {
   width: 45%;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .option-checkbox {
   width: 15%;
@@ -1492,7 +1492,7 @@ li {
 .preview-info {
   position: absolute;
   top: 0;
-  right: -30px;
+  left: -30px;
 }
 .tool-tip {
   position: relative;
@@ -1526,7 +1526,7 @@ li {
   cursor: pointer;
 }
 .course-creation-link {
-  float: right;
+  float: left;
 }
 @media (max-width: 500px) {
   .course-creation-link {
@@ -1537,7 +1537,7 @@ li {
 .indicator-pill::before {
   width: 0 !important;
   height: 0 !important;
-  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 .role {
   display: flex;
@@ -1547,7 +1547,7 @@ li {
 }
 @media (min-width: 500px) {
   .role:last-child {
-    margin-left: 5rem;
+    margin-right: 5rem;
   }
 }
 .icon-xl {
@@ -1593,7 +1593,7 @@ li {
   height: 0;
   width: 0;
   border-radius: 0;
-  margin-right: 0;
+  margin-left: 0;
 }
 .modal-header {
   padding: 1rem 1rem 0 !important;
@@ -1616,7 +1616,7 @@ li {
   justify-content: flex-end !important;
 }
 .modal-footer .btn-primary {
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .modal-header .modal-title {
   color: var(--gray-900);
@@ -1662,7 +1662,7 @@ select {
   -webkit-appearance: none;
 }
 .course-list-cta {
-  float: right;
+  float: left;
 }
 .modal-title {
   font-size: var(--text-lg) !important;
@@ -1720,11 +1720,11 @@ select {
 }
 .lms-menu {
   background-image: url(/assets/lms/icons/down-arrow.svg);
-  background-position: right 0.5rem center;
+  background-position: left 0.5rem center;
   background-repeat: no-repeat;
   background-size: 0.75rem;
-  padding-right: 2.5rem;
-  text-align: left;
+  padding-left: 2.5rem;
+  text-align: right;
   -webkit-print-color-adjust: exact;
 }
 .clickable-row {
@@ -1752,9 +1752,9 @@ select {
 }
 .onboarding-skip {
   font-size: var(--text-sm);
-  float: right;
+  float: left;
   cursor: pointer;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .result-row {
   display: block;
@@ -1863,5 +1863,5 @@ select {
   cursor: none;
 }
 
-/* ../../../../../../../var/folders/4_/lv_vmx0s681_6r64svft6mk00000gn/T/tmp-11873-oo3ZGtOSqB9A/de_tinkerhub/de_tinkerhub/public/css/lms.bundle.css */
-/*# sourceMappingURL=lms.bundle.6HR5KXI6.css.map */
+/* ../../../../../../../var/folders/4_/lv_vmx0s681_6r64svft6mk00000gn/T/tmp-1365-D0yigdXmYgeJ/de_tinkerhub/de_tinkerhub/public/css/lms.bundle.css */
+/*# sourceMappingURL=lms.bundle.J5DZ3THT.css.map */

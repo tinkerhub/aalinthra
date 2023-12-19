@@ -29,8 +29,8 @@
 {% if events %}
     <h1>Upcoming Events</h1>
     {%- for event in events %}     
-        <div class="flex-row justify-content-between card w-50 p-3 my-5">
-            <a class="text-dark" href="{{frappe.utils.get_url()}}/{{event.name}}"> {{ event.title }} - {{ event.starting_date }}
+        <div class="card flex-row justify-content-between card w-50 p-3 my-5">
+            <a class="card-body text-dark" href="{{frappe.utils.get_url()}}/{{event.route}}"> {{ event.title }} - {{ event.starting_date }}
             </a>
             {% if event.host_college %} <span class="text-info">College Event</span> {% endif %}
         </div>
